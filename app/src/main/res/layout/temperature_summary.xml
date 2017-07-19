@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/weatherSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sunny_icon"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/dayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="środa"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/imageIcon"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="raczej słonecznie"
+        android:id="@+id/briefForecast"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lekka mgła po 2 rano. Prawie bezchmurnie przy minimalnej temperaturze 22 stopnie. Wiatr od 8 do 12 km/h, północny; wieczorem cieplejszy."
+        android:id="@+id/description"
+        android:layout_below="@+id/dayTextView"
+        android:layout_toRightOf="@+id/imageIcon"
+        android:layout_marginLeft="5dp" />
+
+</RelativeLayout>
